@@ -1,0 +1,135 @@
+body {
+  background-color: black;
+  font-family: Helvetica;
+  font-size: 22px;
+  color: rgba(255,245,238,0.9); /** seashell @ 0.9 opacity **/
+}
+div {
+  border: 0 solid white;
+}
+h2 {
+  margin: 0 0 25px 0;
+}
+h4 {
+  margin: 0;
+}
+.flex {
+  display: flex;
+}
+.column {
+  flex-direction: column;
+}
+.segment {
+  min-height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.segment img {
+  max-height: 100%;
+  max-width: 100%;
+}
+.text-block {
+  background-color: black;
+  width: 100%;
+  text-align: center;
+  padding: 16px;
+}
+.transparent {
+  background-color: transparent;
+}
+
+/*** header ***/
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 49px;
+  padding: 10px;
+  border-bottom: 1px solid seashell;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header img {
+  height: 50px;
+}
+header ul {
+  display: inline-block;
+  margin: 10px;
+}
+header ul li {
+  display: inline-block;
+  padding: 10px;
+  text-decoration: underline;
+}
+header ul li a {
+  color: inherit;
+}
+
+/***  segments   ***/
+
+#main {
+  position: absolute;
+  top: 70px;
+  left: 0;
+  padding: 20px;
+  width: 100%;
+}
+#mission {
+  background-image: url('../images/img-mission-background.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/*** teas ***/
+#tea {
+  max-width: 1000px;
+  margin: 50px auto;
+}
+#the-steep-list {
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.tea-option {
+  width: 300px;
+  margin: 15px;
+}
+.tea-option img {
+  max-width: 100%;
+  height: 200px;
+  margin-bottom: 10px;
+}
+.caption {
+  width: 100%;
+  text-align: center;
+}
+/*** locations ***/
+#locations-div {
+  background-image: url('../images/img-locations-background.jpg');
+  background-position: center -100px;
+  background-repeat: no-repeat;
+  height: 500px;
+  width: 100%;
+  justify-content: center;
+}
+#locations-list {
+  justify-content: center;
+}
+#locations-header {
+  text-align: center;
+}
+#locations-header h2 {
+  margin: 0;
+}
+.location {
+  display: inline-block;
+  margin: 15px;
+  width: 300px;
+}
+.location h3, .location p {
+  display: block;
+}
